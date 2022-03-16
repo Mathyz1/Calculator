@@ -10,7 +10,11 @@
 <body>
     <div class="container">
         <form action="" class="calculator" name="calc">
-            <input type="text" class="value" readonly name="txt">
+            <div class="shadow">
+                <input type="text" class="value" readonly name="txt">
+                <input type="text" class="result" readonly name="resultado">    
+            </div>
+            
             <!--Botones-->
             <span class="num clear" onclick="calc.txt.value=''"><i>C</i></span>
             <span class="num" onclick="calc.txt.value+='/'"><i>/</i></span>
@@ -36,8 +40,9 @@
             <span class="num" onclick="calc.txt.value+='00'"><i>00</i></span>
             <span class="num" onclick="calc.txt.value+='.'"><i>.</i></span>
 
-            <span class="num equal" onclick="document.calc.txt.value=eval(calc.txt.value)"><i>=</i></span>
+            <span class="num equal" onclick="document.calc.resultado.value=eval(calc.txt.value)"><i>=</i></span>
         </form>
     </div>
+    <script src="codigo.js"></script>
 </body>
 </html>

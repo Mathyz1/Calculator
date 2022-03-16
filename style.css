@@ -30,18 +30,53 @@ body {
   display: grid;
 }
 
-.calculator .value {
+/*Se encarga de dar la sombra por igual a ambos pero, para que la grilla no se desacomode,
+tuvo que contener tambien las configuraciones de grilla posicion y tamaños*/
+.calculator .shadow {
   position: relative;
+  display: grid;
   grid-column: span 4;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
   height: 100px;
   left: 10px;
   width: calc(100% - 20px);
+  border-radius: 10px;
+}
+
+.calculator .value {
+  position: relative;
+  /*grid-column: span 4;*/
+  height: 50px;
+  /*left: 10px;*/
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #a7af7c;
+  /*margin-bottom: 10px;
+  border-radius: 10px;*/
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  /*box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);*/
+  /*text-align: right;*/
+  padding: 10px 10px 0px;
+  font-size: 2em;
+}
+
+.calculator .result {
+  position: relative;
+  /*grid-column: span 4;*/
+  height: 50px;
+  /*left: 10px;*/
+  width: 100%;
   border: none;
   outline: none;
   background: #a7af7c;
   margin-bottom: 10px;
-  border-radius: 10px;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);
+  /*border-radius: 10px;*/
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /*box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.75);*/
+  /*box-shadow: 0 2px 0 2px rgba(0, 0, 0, 0.75);*/
   text-align: right;
   padding: 10px;
   font-size: 2em;
@@ -63,6 +98,7 @@ body {
   font-weight: 400px;
   border-radius: 10px;
 }
+
 .calculator span:active {
   filter: brightness(1.5);
 }
@@ -73,6 +109,7 @@ body {
   font-size: 1.5em;
   text-transform: uppercase;
 }
+
 .calculator span::before {
   content: "";
   position: absolute;
