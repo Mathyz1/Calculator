@@ -43,7 +43,7 @@ tuvo que contener tambien las configuraciones de grilla posicion y tamaños*/
   border-radius: 10px;
 }
 
-.calculator .value {
+.calculator .consola1 {
   position: relative;
   /*grid-column: span 4;*/
   height: 50px;
@@ -62,7 +62,7 @@ tuvo que contener tambien las configuraciones de grilla posicion y tamaños*/
   font-size: 2em;
 }
 
-.calculator .result {
+.calculator .consola2 {
   position: relative;
   /*grid-column: span 4;*/
   height: 50px;
